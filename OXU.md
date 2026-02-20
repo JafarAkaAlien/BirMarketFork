@@ -2,7 +2,7 @@ Oxu
 Eziz Raiz, Resul ve Eziz
 Salam burani oxumaq mutleqdir.
 
-Dostlar clone etdikden Sonra npm install vite@react yazin zehmet olmasa. 
+Dostlar clone etdikden Sonra terminala /" npm install "/ yazin zehmet olmasa. 
 
 
 zehmet olmasa component-pages mentiqine uygun yazin sehifeleri pages, komponentleri components
