@@ -1,5 +1,5 @@
 Oxu 
-Eziz Raiz, Resul ve Eziz
+Eziz Rais, Resul ve Eziz
 Salam burani oxumaq mutleqdir.
 
 Dostlar clone etdikden Sonra terminala /" npm install "/ yazin zehmet olmasa. 
