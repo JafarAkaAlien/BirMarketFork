@@ -11,4 +11,10 @@ body, html, #root {
   padding: 0 !important;
   overflow-x: hidden; /* Sağa-sola sürüşməni (scroll) ləğv edir */
   display: block !important; /* Mərkəzləməni ləğv edir */
+@import "tailwindcss";
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+  font-family: "Roboto", sans-serif;
+}
 }
