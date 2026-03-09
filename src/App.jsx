@@ -1,8 +1,9 @@
 import React from 'react';
 import Header from './components/Header/Header';
 import HomeMain from './components/HomeMain/HomeMain';
-import MegaSale from "./components/megaSASALELE";
+// import MegaSale from "./components/megaSASALELE";
 import Footer from './components/Footer/Footer';
+import Rais from "./components/rais"
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Header />
       <main style={{ minHeight: '100vh', paddingTop: '160px' }}>
         <HomeMain />
-         <MegaSale />
+         {/* <MegaSale /> */}
+         <Rais/>
         {/* Digər səhifə komponentləri bura gələcək */}
       </main>
       <Footer/>
