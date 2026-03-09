@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './assets/components/Header/Header';
-import HomeMain from './assets/components/HomeMain/HomeMain';
-import Footer from './assets/components/Footer/Footer'; // Yeni import
+import Header from './components/Header/Header';
+import HomeMain from './components/HomeMain/HomeMain';
+// import Footer from './components/Footer/Footer'; // Yeni import
 import MegaSale from "./components/megaSASALELE";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
          <MegaSale />
         {/* Digər səhifə komponentləri bura gələcək */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import DailySales from '../midSection/DailySales/DailySales'
+import DailySales from '../DailySales/DailySales'
 
 const Test = () => {
   return (

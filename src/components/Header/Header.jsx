@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Header.css';
-import logoImg from '../../../images/logo.png'; 
+import logoImg from '../../images/logo.png'; 
 
 const Header = () => {
   const [isCatalogOpen, setIsCatalogOpen] = useState(false);
