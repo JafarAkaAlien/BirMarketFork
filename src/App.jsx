@@ -1,10 +1,19 @@
-import React from 'react'
-import Test from './assets/components/Test/Test'
+import React from 'react';
+import Header from './assets/components/Header/Header';
+import HomeMain from './assets/components/HomeMain/HomeMain';
+import Footer from './assets/components/Footer/Footer'; // Yeni import
 
-const App = () => {
+function App() {
   return (
-    <div><Test/></div>
-  )
+    <div className="app-container">
+      <Header />
+      <main style={{ minHeight: '100vh', paddingTop: '160px' }}>
+        <HomeMain />
+        {/* Digər səhifə komponentləri bura gələcək */}
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;

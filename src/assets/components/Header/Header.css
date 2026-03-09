@@ -1,0 +1,235 @@
+/* Header.css */
+
+.header-main-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+}
+
+/* Üst hissə */
+.top-header {
+    width: 100%;
+    background-color: #f6f6f6;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Orta hissə - rəngi və padding-i tənzimləndi */
+.middle-header {
+    width: 100%;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    padding: 18px 0; 
+}
+
+/* İçindəki elementlərin düzülüşü */
+.header-wrapper {
+    width: 100%;
+    max-width: 1350px;
+    padding: 0 40px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px; /* Bütün ana elementlər arasındakı minimum boşluq */
+}
+
+/* 1. Logo və Şəhər Seçimi */
+.logo-section {
+    margin-right: 15px; /* Logonu şəhər seçimindən ayırır */
+}
+
+.main-logo {
+    height: 42px;
+    display: block;
+}
+
+.city-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #777;
+    font-size: 14px;
+    white-space: nowrap;
+    margin-right: 15px; /* Kataloq düyməsindən aralı olması üçün */
+}
+
+/* 2. Kataloq Düyməsi */
+.catalog-button {
+    background-color: #e21e78;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+/* 3. Axtarış Sahəsi */
+.search-box {
+    display: flex;
+    flex: 1; 
+    margin: 0 15px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+}
+
+.search-btn {
+    background-color: #e21e78;
+    color: white;
+    border: none;
+    padding: 0 25px;
+    border-radius: 0 6px 6px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 4. Üst Linklər və İkonlar */
+.top-left a {
+    color: #777 !important;
+    text-decoration: none !important;
+    font-size: 13px;
+    margin-right: 25px;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Nömrə, Dil və Giriş arasındakı boşluq */
+    color: #777 !important;
+}
+
+.top-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #777 !important;
+}
+
+/* 5. Səbət və Seçilmişlər */
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* İkonlar arasındakı boşluq */
+    margin-left: 10px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #777;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.menu-icon {
+    font-size: 20px;
+}
+
+.menu-text {
+    font-size: 12px;
+}
+
+/* "Birmarket-də satın" düyməsi */
+.sell-on-btn {
+    background-color: #e21e78;
+    color: white;
+    border: none;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Kataloq Dropdown Strukturu */
+.catalog-container {
+    position: relative; /* Dropdown-un düyməyə görə düzülməsi üçün */
+}
+
+.catalog-dropdown {
+    position: absolute;
+    top: 55px; /* Düymənin dərhal altı */
+    left: 0;
+    width: 280px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    max-height: 400px; /* Sabit hündürlük */
+    overflow: hidden;
+}
+
+.dropdown-scroll-area {
+    flex: 1;
+    overflow-y: auto; /* Sənin istədiyin scroll */
+}
+
+/* Scrollbar dizaynı */
+.dropdown-scroll-area::-webkit-scrollbar {
+    width: 5px;
+}
+.dropdown-scroll-area::-webkit-scrollbar-thumb {
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+.dropdown-menu {
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.dropdown-item {
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: #333;
+}
+
+.dropdown-item:hover {
+    background-color: #fdf2f7;
+    color: #e21e78;
+}
+
+.dropdown-item.highlight {
+    color: #e21e78;
+    font-weight: bold;
+}
+
+.dropdown-footer {
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #eee;
+    color: #e21e78;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Mövcud dizaynın qalan hissəsi... */
