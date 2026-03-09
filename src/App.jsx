@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from './components/Header/Header';
 import HomeMain from './components/HomeMain/HomeMain';
-// import Footer from './components/Footer/Footer'; // Yeni import
 import MegaSale from "./components/megaSASALELE";
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
          <MegaSale />
         {/* Digər səhifə komponentləri bura gələcək */}
       </main>
-      {/* <Footer /> */}
+      <Footer/>
     </div>
   );
 }
