@@ -4,3 +4,17 @@
 * {
   font-family: "Roboto", sans-serif;
 }
+
+.swiper-pagination {
+  margin-top: 10px;
+  position: relative !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ea207e !important;
+}
+
+.swiper-button-disabled {
+  opacity: 0 !important;
+  pointer-events: none;
+}

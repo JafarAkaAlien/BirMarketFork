@@ -1,10 +1,10 @@
 import "./App.css";
-import MegaSale from "./components/megaSASALELE";
+import Rais from "./components/rais";
 
 function App() {
   return (
     <>
-      <MegaSale />
+      <Rais />
     </>
   );
 }
