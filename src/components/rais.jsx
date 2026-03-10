@@ -56,7 +56,7 @@ const MegaSale = () => {
       id="rais"
       className="flex flex-col gap-15 text-center w-full items-center"
     >
-      <div className="max-w-7xl w-screen px-4">
+      <div className="max-w-7xl w-screen px-4 py-5 flex flex-col gap-15">
         <section className="flex flex-col gap-5">
           <div className="self-start">
             <h3 className="font-bold text-[32px]">
