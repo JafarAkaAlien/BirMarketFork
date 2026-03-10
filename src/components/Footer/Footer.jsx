@@ -6,11 +6,11 @@ const Footer = () => {
   return (
     <footer className="main-footer">
       {/* 1. Üst tərəf: Rəngli Reklam Bölməsi */}
-      <div className="footer-promo-banner">
+      {/* <div className="footer-promo-banner">
         <div className="footer-container">
           <img src={footerImg} alt="App Promo" className="footer-promo-img" />
         </div>
-      </div>
+      </div> */}
 
       <div className="footer-content">
         <div className="footer-container">
