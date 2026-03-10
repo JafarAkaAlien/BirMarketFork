@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, FreeMode } from "swiper/modules";
 import "swiper/css";
@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import "./CardFactory.css"
+// import abi from "../../../db.json"
 
 import {
     faShoppingCart,
@@ -65,27 +66,51 @@ const CardFactory = (props) => {
             <h1>Loading...</h1>
         )
     }
+    if (error) {
+        console.log(error);
+
+        // useEffect(()=>{
+        //     fetch("../../../db.json").
+        //         then(res => res.json()).
+        //         then(data => {
+
+        //             products = data.products
+        //             console.log(products);
+
+        //         })
+        // }, [])
+
+
+    }
+
+
+
+
+
+
+
+
     else {
         if (filter == "daily") {
-            products = data.filter((x) => x.dailySale)
+            products = data.products.filter((x) => x.dailySale)
             buttonText = "Hamısını gör"
         }
         else if (filter == "mega") {
-            products = data.filter((x) => x.megaSale)
+            products = data.products.filter((x) => x.megaSale)
             buttonText = "Bütün endirimlərə baxmaq"
         }
         else if (filter == "top") {
-            products = data.filter((x) => x.top)
+            products = data.products.filter((x) => x.top)
             buttonText = "Top məhsullara baxmaq"
 
         }
         else if (filter == "news") {
-            products = data.filter((x) => x.news)
+            products = data.products.filter((x) => x.news)
             buttonText = "Bütün yeniliklərə baxmaq"
 
         }
         else {
-            products = data
+            products = data.products.filter
 
         }
     }
