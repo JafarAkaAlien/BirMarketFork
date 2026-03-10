@@ -1,0 +1,115 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    min-height: 60vh;
+    /* width: 80%; */
+}
+
+.div1 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    background-image: url(../../images/sales/smartfon.png);
+    background-size: cover;
+}
+
+.div2 {
+    grid-column: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 2;
+    background-image: url(../../images/sales/televizor.png);
+        background-size: cover;
+
+
+}
+
+.div3 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+    background-image: url(../../images/sales/makyaj.png);
+    background-size: cover;
+
+}
+
+.div4 {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    background-image: url(../../images/sales/metbex.png);
+    background-size: cover;
+
+}
+
+.div5 {
+    grid-column-start: 5;
+    grid-row-start: 1;
+    background-image: url(../../images/sales/vitamin.png);
+    background-size: cover;
+
+}
+
+.div6 {
+    grid-column-start: 6;
+    grid-row-start: 1;
+    background-image: url(../../images/sales/sampun.png);
+    background-size: cover;
+
+}
+
+.div7 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    background-image: url(../../images/sales/trenajor.png);
+    background-size: cover;
+
+}
+
+.parent2 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 15px;
+    min-height: 33vh;
+    /* width: 80%; */
+}
+
+
+
+.div8 {
+
+    background-image: url(../../images/sales/saat.png);
+    background-size: cover;
+
+}
+.div9 {
+
+    background-image: url(../../images/sales/qulaq.png);
+    background-size: cover;
+
+}
+.div10 {
+
+    background-image: url(../../images/sales/soyuducu.png);
+    background-size: cover;
+
+}
+.div11 {
+
+    background-image: url(../../images/sales/sac.png);
+    background-size: cover;
+
+}
+.div12 {
+
+    background-image: url(../../images/sales/notebook.png);
+    background-size: cover;
+
+}
+
+.container{
+    margin: 20px 0px;
+}
+
+.div1,.div2,.div3,.div4,.div5,.div6,.div7,.div8,.div9,.div10,.div11,.div12{
+    cursor: pointer;
+}
