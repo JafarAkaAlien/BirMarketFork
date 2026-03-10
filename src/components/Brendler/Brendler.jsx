@@ -102,9 +102,9 @@ const Brendler = () => {
                                                 textAlign: "center",
                                                 height: "100%",
                                             }}
-                                            className="flex flex-col items-center px-6 py-4 relative gap-5 w-[250px] h-[88px]">
+                                            className="flex flex-col items-center px-6 py-4 relative gap-5 w-62.5 h-22">
 
-                                            <img src={product.image} className="w-[200px] h-[60px] object-contain " />
+                                            <img src={product.image} className="w-50 h-15 object-contain " />
 
 
                                         </div>

@@ -14,6 +14,7 @@ import {
   faStar,
   faTruckFast,
 } from "@fortawesome/free-solid-svg-icons";
+import CardFactory from "./CardFactory/CardFactory";
 
 const products = [
   {
@@ -66,175 +67,16 @@ const MegaSale = () => {
               endirimlər
             </h3>
           </div>
-          <div>
-            <Swiper
-              pagination={{ clickable: true }}
-              navigation={false}
-              modules={[Pagination, Navigation, FreeMode]}
-              breakpoints={{
-                0: {
-                  slidesPerView: 2.2,
-                  slidesPerGroup: 2,
-                },
-                640: {
-                  slidesPerView: 3.2,
-                  slidesPerGroup: 3,
-                },
-                1024: {
-                  slidesPerView: 5,
-                  slidesPerGroup: 5,
-                },
-              }}
-              grabCursor={true}
-              freeMode={true}
-              spaceBetween={16}
-              className=""
-            >
-              {productChunks.map((chunk, index) => (
-                <SwiperSlide key={index}>
-                  <div style={{ display: "flex", gap: "1rem" }}>
-                    {chunk.map((product) => (
-                      <div
-                        key={product.id}
-                        style={{
-                          border: "1px solid rgba(204, 204, 204, 0.3)",
-                          textAlign: "center",
-                          height: "100%",
-                        }}
-                        className="flex flex-col px-6 py-4 relative gap-5 w-75"
-                      >
-                        <button className="absolute right-4 top-4 text-gray-400 cursor-pointer">
-                          <FontAwesomeIcon icon={faHeart} />{" "}
-                        </button>
-                        <img src={product.image} className="w-full" />
-                        <div className="details relative text-left flex flex-col gap-1">
-                          <span className="bg-[#ea207e] text-white text-[10px] md:text-[12px] font-bold absolute left-0 -top-6 px-1">
-                            -{product.discount}%
-                          </span>
-
-                          <p className="font-bold">
-                            <span className="text-[#ea207e] text-[14px] md:text-[18px]">
-                              {product.price}.00 ₼{" "}
-                            </span>
-                            <span className="line-through text-gray-400 text-[14px] md:text-[18px]">
-                              {product.oldPrice}.00 ₼
-                            </span>
-                          </p>
-
-                          <p className="bg-yellow-300 p-2 py-1 font-bold text-[10px] md:text-[12px] w-fit rounded-[3px]">
-                            {product.months}.00 x 3 ay
-                          </p>
-                          <p className="text-[13px]">{product.name}</p>
-
-                          <div className="text-orange-400 text-[12px]">
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                          </div>
-                        </div>
-                        <button className="mt-auto cursor-pointer w-full py-2 bg-[#ea207e1a] text-[#ea207e] font-bold">
-                          <FontAwesomeIcon icon={faShoppingCart} /> Səbətə At
-                        </button>
-                      </div>
-                    ))}
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-
-            <button className="border-[#ea207e] border p-3 px-24 w-full md:w-fit text-[12px] md:text-[16px] text-[#ea207e] cursor-pointer">
-              Bütün endirimlərə baxmaq
-            </button>
-          </div>
+          <CardFactory data={"mega"}/>
         </section>
 
         <section className="flex flex-col gap-5">
           <div className="self-start">
             <h3 className="font-bold text-[32px]">TOP məhsullar</h3>
           </div>
-          <div>
-            <Swiper
-              pagination={{ clickable: true }}
-              navigation={false}
-              modules={[Pagination, Navigation, FreeMode]}
-              breakpoints={{
-                0: {
-                  slidesPerView: 2.2,
-                  slidesPerGroup: 2,
-                },
-                640: {
-                  slidesPerView: 3.2,
-                  slidesPerGroup: 3,
-                },
-                1024: {
-                  slidesPerView: 5,
-                  slidesPerGroup: 5,
-                },
-              }}
-              grabCursor={true}
-              freeMode={true}
-              spaceBetween={16}
-              className=""
-            >
-              {productChunks.map((chunk, index) => (
-                <SwiperSlide key={index}>
-                  <div style={{ display: "flex", gap: "1rem" }}>
-                    {chunk.map((product) => (
-                      <div
-                        key={product.id}
-                        style={{
-                          border: "1px solid rgba(204, 204, 204, 0.3)",
-                          textAlign: "center",
-                          height: "100%",
-                        }}
-                        className="flex flex-col px-6 py-4 relative gap-5 w-75"
-                      >
-                        <button className="absolute right-4 top-4 text-gray-400 cursor-pointer">
-                          <FontAwesomeIcon icon={faHeart} />{" "}
-                        </button>
-                        <img src={product.image} className="w-full" />
-                        <div className="details relative text-left flex flex-col gap-1">
-                          <span className="bg-[#ea207e] text-white text-[10px] md:text-[12px] font-bold absolute left-0 -top-6 px-1">
-                            -{product.discount}%
-                          </span>
 
-                          <p className="font-bold">
-                            <span className="text-[#ea207e] text-[14px] md:text-[18px]">
-                              {product.price}.00 ₼{" "}
-                            </span>
-                            <span className="line-through text-gray-400 text-[14px] md:text-[18px]">
-                              {product.oldPrice}.00 ₼
-                            </span>
-                          </p>
+            <CardFactory data="top"/>
 
-                          <p className="bg-yellow-300 p-2 py-1 font-bold text-[10px] md:text-[12px] w-fit rounded-[3px]">
-                            {product.months}.00 x 3 ay
-                          </p>
-                          <p className="text-[13px]">{product.name}</p>
-
-                          <div className="text-orange-400 text-[12px]">
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                          </div>
-                        </div>
-                        <button className="mt-auto cursor-pointer w-full py-2 bg-[#ea207e1a] text-[#ea207e] font-bold">
-                          <FontAwesomeIcon icon={faShoppingCart} /> Səbətə At
-                        </button>
-                      </div>
-                    ))}
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-            <button className="border-[#ea207e] border p-3 px-24 w-full md:w-fit text-[12px] md:text-[16px] text-[#ea207e] cursor-pointer">
-              Bütün TOP məhsullara baxmaq
-            </button>
-          </div>
         </section>
 
         <section className="flex flex-col gap-5">
@@ -245,87 +87,7 @@ const MegaSale = () => {
               src="https://birmarket.az/images/birmarket_logo.svg"
             />
           </div>
-          <div>
-            <Swiper
-              pagination={{ clickable: true }}
-              navigation={false}
-              modules={[Pagination, Navigation, FreeMode]}
-              breakpoints={{
-                0: {
-                  slidesPerView: 2.2,
-                  slidesPerGroup: 2,
-                },
-                640: {
-                  slidesPerView: 3.2,
-                  slidesPerGroup: 3,
-                },
-                1024: {
-                  slidesPerView: 5,
-                  slidesPerGroup: 5,
-                },
-              }}
-              freeMode={true}
-              grabCursor={true}
-              spaceBetween={16}
-              className=""
-            >
-              {productChunks.map((chunk, index) => (
-                <SwiperSlide key={index}>
-                  <div style={{ display: "flex", gap: "1rem" }}>
-                    {chunk.map((product) => (
-                      <div
-                        key={product.id}
-                        style={{
-                          border: "1px solid rgba(204, 204, 204, 0.3)",
-                          textAlign: "center",
-                          height: "100%",
-                        }}
-                        className="flex flex-col px-6 py-4 relative gap-5 w-75"
-                      >
-                        <button className="absolute right-4 top-4 text-gray-400 cursor-pointer">
-                          <FontAwesomeIcon icon={faHeart} />{" "}
-                        </button>
-                        <img src={product.image} className="w-full" />
-                        <div className="details relative text-left flex flex-col gap-1">
-                          <span className="bg-[#ea207e] text-white text-[10px] md:text-[12px] font-bold absolute left-0 -top-6 px-1">
-                            -{product.discount}%
-                          </span>
-
-                          <p className="font-bold">
-                            <span className="text-[#ea207e] text-[14px] md:text-[18px]">
-                              {product.price}.00 ₼{" "}
-                            </span>
-                            <span className="line-through text-gray-400 text-[14px] md:text-[18px]">
-                              {product.oldPrice}.00 ₼
-                            </span>
-                          </p>
-
-                          <p className="bg-yellow-300 p-2 py-1 font-bold text-[10px] md:text-[12px] w-fit rounded-[3px]">
-                            {product.months}.00 x 3 ay
-                          </p>
-                          <p className="text-[13px]">{product.name}</p>
-
-                          <div className="text-orange-400 text-[12px]">
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                          </div>
-                        </div>
-                        <button className="mt-auto cursor-pointer w-full py-2 bg-[#ea207e1a] text-[#ea207e] font-bold">
-                          <FontAwesomeIcon icon={faShoppingCart} /> Səbətə At
-                        </button>
-                      </div>
-                    ))}
-                  </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
-            <button className="border-[#ea207e] border p-3 px-24 w-full md:w-fit text-[12px] md:text-[16px] text-[#ea207e] cursor-pointer">
-              Bütün yeniliklərə baxmaq
-            </button>
-          </div>
+          <CardFactory data="news"/>
         </section>
       </div>
 

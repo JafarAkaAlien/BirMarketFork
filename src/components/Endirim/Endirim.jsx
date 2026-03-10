@@ -27,7 +27,7 @@ const Endirim = () => {
 
                 <section className="flex flex-col gap-5">
                     <div className="flex gap-5 self-start">
-                        <h3 className="font-bold text-[32px]">Yeniliklər</h3>
+                        <h3 className="font-bold text-[32px]">60%-dək endirim!</h3>
                         <img
                             className="w-35"
                             src="https://birmarket.az/images/birmarket_logo.svg"
