@@ -9,6 +9,9 @@ import Endirim from './components/Endirim/Endirim';
 import Brendler from './components/Brendler/Brendler';
 
 function App() {
+
+ 
+
   return (
     <div className="app-container">
       <Header />

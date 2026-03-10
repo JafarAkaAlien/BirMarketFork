@@ -16,3 +16,12 @@ Push ederken Oz branchinizi edin, maine direct pushu baglayacam.
 Diqqetinize gore tesekkur edirem
 
 ~Hormetle Jafar
+
+
+
+
+Saytin islemesi ucun lazim olanlar:
+
+npm i react
+npm install tailwindcss @tailwindcss/vite
+npm i 
